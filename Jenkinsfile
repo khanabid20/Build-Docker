@@ -5,9 +5,9 @@ pipeline {
     label 'ansible'
   }
   stages{
-    stage('Clone repository'){
-      checkout scm
-    }
+//     stage('Clone repository'){
+//       checkout scm
+//     }
     stage('Build image'){
       app = docker.build('.')
     }
