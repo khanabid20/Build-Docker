@@ -1,6 +1,9 @@
 def app
 
 pipeline {
+  agent{
+    label 'ansible'
+  }
   stages{
     stage('Clone repository'){
       checkout scm
